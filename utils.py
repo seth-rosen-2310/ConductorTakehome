@@ -64,7 +64,8 @@ def apply_unit_multiplier(num, unit):
         return num * multiplier
 
 #extracts the largest number from the document using NLP guidance as explained in the bonus challenge of description
-def extract_largest_adv(pdf):
+def extract_largest_adv(pdf_path):
+    pdf = pdfplumber.open(pdf_path)
     page_max = []
     for p in pdf.pages:
         
@@ -102,7 +103,8 @@ def get_numbers_basic(text):
     return clean_numbers
 
 #extracts the largest number from pdf with no care for units
-def extract_largest_basic(pdf):
+def extract_largest_basic(pdf_path):
+    pdf = pdfplumber.open(pdf_path)
     page_max = []
     for p in pdf.pages:
         
