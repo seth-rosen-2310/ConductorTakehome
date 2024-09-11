@@ -1,4 +1,4 @@
-# Conductor Take home project solution - Seth Rosen
+# Take home project solution - Seth Rosen
 I provided solutions to both the basic and advanced options listed in the project description. The notebook calls the functions and displays the two different outputs for easy viewing.
 
 My solution makes use of pdfplumber for OCR since the provided pdf is very clean/doesn't have scanned pages otherwise I would have needed another package to handle those better. 
